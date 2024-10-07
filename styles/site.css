@@ -21,7 +21,10 @@ body {
   background-color: #efece5;
   color: #000000;
 
-  margin: 0;
+  margin: 0 auto;
+
+  width: 100%;
+  max-width: 800px;
 }
 
 h1 {
@@ -102,7 +105,7 @@ h2 {
   display: block;
   width: 100%;
   max-width: 800px;
-  min-width: 400px;
+  /* min-width: 400px; */
 }
 
 .button {
@@ -117,4 +120,28 @@ h2 {
   color: white;
   text-decoration: none;
   border-radius: 4px;
+}
+
+@media (max-width: 700px) {
+  nav menu {
+    flex-direction: column;
+  }
+
+  nav menu li a {
+    border-left: 8px solid #efece5;
+    border-bottom: 0;
+    padding: 16px 8px 16px 12px;
+  }
+
+  nav menu li a:hover {
+    border-left: 8px solid #55bea9;
+    border-bottom: 0;
+    padding-bottom: 16px
+  }
+
+  .left-image {
+    flex-direction: column;
+    background-color: inherit;
+    padding: 0px;
+  }
 }
